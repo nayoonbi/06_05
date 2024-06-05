@@ -1,0 +1,98 @@
+    body{
+        margin: 0;
+    }
+    
+    .container {
+        position: relative;
+        width: 1920px;
+        height: 720px;
+        padding: 20px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2 {
+        position: relative;
+        width: 1920px;
+        height: 800px;
+        padding: 20px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container3 {
+        position: relative;
+        width: 1920px;
+        height: 500px;
+        padding: 20px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        color : black;
+        font-size : 128px;
+        position : absolute;
+        text-align: center;
+        margin : 0;
+        font-family : pretendard;
+        font-weight : 100; 
+    }
+    
+    
+    .profile_img img{
+        width: 200px;
+        border-radius: 10px;
+    }
+    .profile_text{
+        margin-left: 50px;
+    }
+    .profile_text h2{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+    .profile_text p{
+        color: black;
+        font-weight: 500;
+    }
+    
+    .work img{
+        width: 500px;
+        border-radius: 10px;
+    }
+    .work_2{
+        margin-left: 50px;
+    }
+    .work_2 img{
+        width: 500px;
+        border-radius: 10px;
+    }
+    
+    .back-to-position{
+        opacity: 0;
+        transition: 1s;
+    }
+    
+    .back-to-position.to-right{
+        transform: translateX(-150px);
+    }
+    .back-to-position.to-left{
+        transform: translateX(150px);
+    }
+    
+    .show .back-to-position {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .show .back-to-position.delay-0{
+        transition-delay: 0s;
+    }
+    .show .back-to-position.delay-1{
+        transition-delay: .3s;
+    }
